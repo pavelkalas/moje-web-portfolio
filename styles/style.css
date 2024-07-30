@@ -18,6 +18,8 @@ body {
     font-weight: 100;
     background-attachment: fixed;
     background-image: linear-gradient(120deg, #320271, #710a3f);
+
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.650);
 }
 
 section {
@@ -28,45 +30,55 @@ section {
 }
 
 header > img {
-    width: 140px;
+    width: 165px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, calc(-50% - 100px));
+    transform: translate(-50%, calc(-50% - 120px));
     border-radius: 50%;
     -webkit-user-drag: none;
     user-select: none;
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
+    box-shadow: 2px 2px 9px 1px #00000077;
 }
 
 section > h1 {
     letter-spacing: 2.5px;
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Kelly Slab";
     width: max-content;
-    margin: 25px 0;
     position: relative;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 section > p {
-    margin: -5px auto 10px auto;
+    margin: 8px auto;
     color: #FFFFFF;
-    font-size: 0.94em;
+    font-size: 0.85rem;
     font-family: "Ubuntu";
     font-weight: 400;
     text-align: center;
+    position: relative;
+    top: -15px;
 }
 
 section > p a {
-    color: rgb(89, 158, 255);
+    color: rgb(120, 226, 255);
+    text-decoration: none;
+    transition: all 0.15s;
+}
+
+section > p a:hover {
+    color: rgb(20, 126, 155);
     text-decoration: none;
 }
 
 section > nav {
-    margin: 25px auto 0 auto;
+    position: relative;
+    margin: 0 auto;
     text-align: center;
     min-width: 50%;
     max-width: 85%;
@@ -75,22 +87,18 @@ section > nav {
 section > nav a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-family: "Ubuntu";
-    font-weight: 500;
-    margin: 0 3px;
-    padding: 2px 4px;
-    transition: all 0.2s;
-    line-height: 28px;
+    margin: 0 5px;
+    padding: 2px;
+    transition: all 0.15s;
+    line-height: 30px;
     min-width: max-content;
     white-space: nowrap;
 }
 
 section > nav a:hover {
-    color: rgba(253, 138, 37, 0.964);
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 5px;
+    color: rgb(124, 185, 242);
 }
 
 footer {
@@ -98,10 +106,10 @@ footer {
     bottom: 15px;
     width: 100%;
     text-align: center;
-    color: #ddd;
+    color: #FFFFFF;
     font-family: "Ubuntu";
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 0.85rem;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 320px) {
