@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Kelly Slab";
+    src: url("/fonty/KellySlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonty/Ubuntu-Regular.ttf");
+}
+
+body {
+    font-weight: 100;
+    background-attachment: fixed;
+    background-image: linear-gradient(120deg, #320271, #710a3f);
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 80px));
+}
+
+header > img {
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% - 100px));
+    border-radius: 50%;
+    -webkit-user-drag: none;
+    user-select: none;
+    border: 2px solid white;
+}
+
+section > h1 {
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-family: "Kelly Slab";
+    width: max-content;
+    margin: 25px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section > p {
+    margin: -5px auto 10px auto;
+    color: #FFFFFF;
+    font-size: 0.94em;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+section > p a {
+    color: rgb(89, 158, 255);
+    text-decoration: none;
+}
+
+section > nav {
+    margin: 25px auto 0 auto;
+    text-align: center;
+    min-width: 50%;
+    max-width: 85%;
+}
+
+section > nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    margin: 0 3px;
+    padding: 2px 4px;
+    transition: all 0.2s;
+    line-height: 28px;
+    min-width: max-content;
+    white-space: nowrap;
+}
+
+section > nav a:hover {
+    color: rgba(253, 138, 37, 0.964);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 320px) {
+    header > img {
+        width: 110px;
+        transform: translate(-50%, calc(-50% - 40px));
+    }
+
+    section > h1 {
+        font-size: 2rem;
+    }
+
+    section > p {
+        font-size: 0.7rem;
+    }
+
+    section > nav a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    header > img {
+        width: 80px;
+        transform: translate(-50%, calc(-50% - 45px));
+
+    }
+
+    section > h1 {
+        font-size: 1.5rem;
+    }
+
+    section > p {
+        font-size: 0.5rem;
+    }
+
+    section > nav a {
+        font-size: 0.58rem;
+        display: block;
+        margin: 8px auto;
+    }
+}
